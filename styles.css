@@ -1,0 +1,23 @@
+#container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+    border: 2px solid orange;
+    padding: 10px;
+}
+.grid-item {
+    background-color: #ffdab9;
+    border: 2px solid orange;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.grid-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.01);
+}
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
